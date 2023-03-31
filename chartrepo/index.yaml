@@ -3,7 +3,28 @@ entries:
   firstchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T11:26:08.891914+07:00"
+    created: "2023-03-31T12:10:32.337931+07:00"
+    dependencies:
+    - name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - enabled
+      version: ^9.7.0
+    - name: apache
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - enabled
+      version: ^9.2.19
+    description: A Helm chart for Kubernetes
+    digest: e2e21b1f5299e4b2e75c5a8b63b6910a6084f9fe634025526339d2d7976434cf
+    name: firstchart
+    type: application
+    urls:
+    - firstchart-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-03-31T12:10:32.324396+07:00"
     dependencies:
     - name: mysql
       repository: https://charts.bitnami.com/bitnami
@@ -25,7 +46,7 @@ entries:
   secondchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-31T11:26:08.892854+07:00"
+    created: "2023-03-31T12:10:32.339517+07:00"
     description: A Helm chart for Kubernetes
     digest: beda187b06626ee2853f4cc3e729a8e58485125a1881d8f1d7dbea814d1e7340
     name: secondchart
@@ -33,4 +54,4 @@ entries:
     urls:
     - secondchart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-31T11:26:08.87407+07:00"
+generated: "2023-03-31T12:10:32.312259+07:00"
