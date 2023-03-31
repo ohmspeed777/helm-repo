@@ -1,0 +1,23 @@
+
+# {{- include "firstchart-mytemplate" . }}
+
+# test:
+# {{ $myFlag := "This is variable" }}
+# {{- if not .Values.my.flag }}
+#   {{- cat "This is true." "and" $myFlag  | nindent 2 }}
+# {{- else }}
+#   {{- "Else " | nindent 2 }}
+# {{- end }}
+
+# countries:
+# {{- range .Values.my.countries}}
+#   - {{ . | upper | quote }}
+# {{- end}}
+
+# {{- range $key, $value := .Values.image}}
+#   - {{ $key }}: {{ $value }}
+# {{- end}}
+
+# {{- with .Values.my.fruits }}
+# fruits:  {{- toYaml . | nindent 2}}
+# {{- end  }}
